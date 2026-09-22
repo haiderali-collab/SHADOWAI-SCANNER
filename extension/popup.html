@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shadow AI Detector</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-shield">🛡️</div>
+        <div>
+          <h1 class="title">SHADOW<span class="highlight">AI</span> DETECTOR</h1>
+          <p class="subtitle">Endpoint Security & AI Governance</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Employee Identity Card -->
+    <div class="identity-card" id="identity-card">
+      <div class="identity-info">
+        <span class="identity-label">EMPLOYEE IDENTITY</span>
+        <span class="identity-name" id="identity-name">Not Configured</span>
+        <span class="identity-email" id="identity-email">Click edit to set name & email</span>
+      </div>
+      <button id="edit-info-btn" class="edit-info-btn" title="Update Employee Identity">
+        ✏️ Edit
+      </button>
+    </div>
+
+    <!-- Status Indicator Banner -->
+    <div class="status-card">
+      <div class="status-dot"></div>
+      <div class="status-info">
+        <p class="status-title">Detector Active</p>
+        <p class="status-desc">Monitoring visited AI tool hostnames</p>
+      </div>
+    </div>
+
+    <!-- Detections List -->
+    <main class="main-content">
+      <div class="section-header">
+        <span class="section-title">Session Detections</span>
+        <span id="detection-count" class="badge">0 Tools</span>
+      </div>
+
+      <div id="detections-list" class="detections-list">
+        <div class="empty-state">
+          <p class="empty-title">No AI tools visited yet</p>
+          <p class="empty-sub">Visiting known AI sites like ChatGPT or Claude will auto-register them with SecOps.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span class="privacy-tag">🔒 Privacy-First Domain Whitelist</span>
+      <button id="clear-btn" class="clear-btn">Clear List</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+

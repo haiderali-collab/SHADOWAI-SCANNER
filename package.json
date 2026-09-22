@@ -1,0 +1,24 @@
+{
+  "name": "shadow-ai-vendor-risk-scanner",
+  "version": "1.0.0",
+  "description": "Shadow AI & Vendor Risk Scanner - SaaS Dashboard Tool for IT and Security Teams",
+  "main": "server/src/index.js",
+  "scripts": {
+    "setup": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -k -p \"[{name}]\" -c \"cyan.bold,emerald.bold\" -n \"SERVER,CLIENT\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "shadow-ai",
+    "vendor-risk",
+    "cybersecurity",
+    "risk-scanner",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT"
+}
