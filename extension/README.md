@@ -17,10 +17,10 @@
 
 ## ⚙️ Requirements & System Architecture
 
-- **Active Backend Server**: The Shadow AI Scanner backend server must be running locally on `http://localhost:5000` (started via `npm run dev` in the root project directory).
+- **Active Backend Server**: The Shadow AI Scanner backend server runs live at `https://shadowai-scanner-production.up.railway.app` (or locally on `http://localhost:5000`).
 - **Configurable Endpoint**: To change the backend URL for remote deployment, open `background.js` and modify:
   ```javascript
-  const BACKEND_URL = "http://your-server-domain.com/api/detections";
+  const BACKEND_URL = "https://shadowai-scanner-production.up.railway.app/api/detections";
   ```
 
 ---

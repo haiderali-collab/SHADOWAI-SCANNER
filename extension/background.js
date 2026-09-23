@@ -1,7 +1,7 @@
 // Shadow AI Detector - Service Worker Background Script (Manifest V3)
 
 // Configurable Backend API Endpoint
-const BACKEND_URL = "http://localhost:5000/api/detections";
+const BACKEND_URL = "https://shadowai-scanner-production.up.railway.app/api/detections";
 
 // Known AI Tool Domains Whitelist
 const KNOWN_AI_DOMAINS = {
